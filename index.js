@@ -72,7 +72,7 @@ const generateMarkdown = require("./utils/generateMarkdown");
 .then((answers) => {
   const readMePage = generateMarkdown(answers);
 
-  fs.writeFile('./Example/README.md', readMePage, (err) =>
+  fs.writeFile('./Generated/README.md', readMePage, (err) =>
   err ? console.log(err) : console.log('Successfully wrote to README.md')
   )
 })
